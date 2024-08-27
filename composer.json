@@ -1,0 +1,64 @@
+{
+    "name": "xypp/flarum-more-bbcode",
+    "description": "Adds more BBCode. Remaster from imeepo/flarum-more-bbcode",
+    "keywords": [
+        "flarum",
+        "flarum extension"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2.0"
+    },
+    "authors": [
+        {
+            "name": "小鱼飘飘",
+            "email": "z@xypp.cc",
+            "role": "Developer"
+        },
+        {
+            "name": "imeepo",
+            "email": "me@imeepo.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/zxy19/flarum-more-bbcode"
+    },
+    "autoload": {
+        "psr-4": {
+            "Imeepo\\MoreBBCode\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "BBCode More",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-code",
+                "color": "#fff",
+                "backgroundColor": "#c2185b"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
