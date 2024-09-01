@@ -1,0 +1,192 @@
+xypp-more-bbcode:
+  admin:
+    settings:
+      tip: |
+        注意: 请确保在更改了功能/云盘下载框设置后运行过cache:clear。你的设置在你清除缓存来通知flarum重新生成render文件之前【不会】生效！
+        【更改任何设置后，你都应该检查你的网站】
+      misc:
+        title: 杂项
+        replace_md:
+          title: 隐藏原有的markdown按钮
+          all: 所有设备
+          tablet: 平板和手机
+          phone: 手机
+          none: 无
+        collect_all:
+          title: 收集所有的原有的其他按钮到一个单独分组
+          all: 所有设备
+          tablet: 平板和手机
+          phone: 手机
+          none: 无
+      functions:
+        title: 功能开关
+        desc: 关闭你想要关闭的功能。默认情况下，功能全部开启
+      cloud:
+        title: 云盘框配置
+        name: 名称
+        image: 图标
+        content: 内容提示
+        key: 键名（type）
+        confirm: 确定删除吗
+        add: 添加一行
+      save: 保存
+    permissions:
+      bypass_reply_label: 忽略回复查看标签
+      bypass_like_label: 忽略点赞查看标签
+  forum:
+    name: 更多BBCode
+    collect: 收集的按钮
+    # Typography Part
+    fonts:
+      title: 字体样式
+      bold: 加粗
+      italic: 斜体
+      strike_through: 删除线
+      underline: 下划线
+    typography:
+      title: 排版
+      link: 链接
+      image: 图像
+      imagebb: 图像(BBCode)
+      code: 代码
+      quote: 引用
+      spoiler: 黑幕
+      dropcap: 首字下沉
+      horizontal_line: 分割线
+      table: 表格
+      unordered_list: 无序列表
+      ordered_list: 有序列表
+    heading:
+      title: 标题
+      label: "{level}级"
+    align:
+      title: 对齐
+      align_left: 左对齐
+      align_center: 居中
+      align_right: 右对齐
+      align_justify: 一般
+      padding_left: 左缩进
+      padding_right: 右缩进
+      image_left: 图像左对齐
+      image_right: 图像右对齐
+      image_center: 图像居中
+    size:
+      title: 大小
+      label: "{size}px"
+    color:
+      title: 颜色
+      label: "{color}"
+    background:
+      title: 背景色
+      label: "{color}"
+    sign:
+      title: 标记
+      acronym: 关键字
+      subscript: 下标
+      superscript: 上标
+
+    # Utilities Part
+    container:
+      title: 容器
+      table: 表格
+      details: 详细信息
+      quote: 引用
+      code: 代码
+      alert: 警告框
+      tabs: 标签页
+      iframe: 嵌入页面
+    widgets:
+      title: 组件
+      progress: 进度条
+      alert: 警告框
+
+    #Embed
+    embed:
+      title: 媒体嵌入
+      cloud: 云盘下载框
+      down: 下载
+      clip: 视频
+      audio: 音频
+
+    #xx2see
+    xx2see:
+      title: 访问限制
+      reply:
+        title: 回复可见内容
+        deny: "此内容需要 {reply} 并刷新页面可见"
+      login:
+        title: 登录可见内容
+        deny: "该内容需要 {login} 后查看"
+      like:
+        title: 点赞可见内容
+        deny: "该内容需要 {like} 后刷新可见"
+        hasLiked: 你已经点过赞了，请刷新页面
+        cannot: 你不能给这个帖子点赞
+
+    #common replacement
+    common:
+      describe: 这里填写描述.
+      title: 这里是标题
+      text: 在此填写你的文本，在此填写你的文本，在此填写你的文本，在此填写你的文本
+      simple: 在此填写你的文本
+      url: "https://example.com"
+      size: 1kb
+      file: 文件.zip
+      any: "..."
+      column: 一列
+    #alert preview
+    alert:
+      title: 警告框
+      type:
+        label: 类型
+        success: 成功
+        warning: 警告
+        error: 错误/危险
+        notice: 提示/信息
+        custom: 自定义
+        basic: 基本
+      label:
+        success: 成功!
+        warning: 警告
+        error: 错误!
+        notice: 提示
+      style: 样式
+      insert: 插入
+      defaults:
+        title: 嗨,给你一个警告框!
+        content: "这是 {type} 类型框的 {style} 样式的默认内容"
+    # cloud preview
+    cloud:
+      title: 云盘下载预览
+      insert: 插入
+      type:
+        label: 云盘
+        other: 网络硬盘
+        github: Github项目
+        gitee: Gitee项目
+        ali: 阿里云盘
+        360: 360云盘
+        bd: 百度云盘
+        ty: 天翼云盘
+        ct: 城通网盘
+        tx: 腾讯微云
+        lz: 蓝奏云
+        123: 123盘
+        kk: 夸克网盘
+        google: 谷歌云端硬盘
+        one: OneDrive
+        f: Fshare
+        mega: Mega
+        dropbox: DropBox
+        mediafire: MediaFire
+      content:
+        defaults: 这里填写内容
+        version: " | 版本: "
+        password: " | 提取码: "
+
+    auto-close:
+      title: 点击按钮后自动关闭浮窗
+      all: 所有设备
+      tablet: 平板和手机
+      phone: 手机
+      none: 无
