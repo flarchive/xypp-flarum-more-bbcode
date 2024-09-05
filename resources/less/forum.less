@@ -1,0 +1,836 @@
+.Post-body table {
+  width: 98%;
+  margin: 1%;
+  overflow-x: auto;
+
+  & td,
+  th {
+    padding: 4px;
+    border: 1px solid @body-bg;
+    text-align: left;
+  }
+
+  & th {
+    background: @primary-color;
+    color: @body-bg;
+    font-weight: bold;
+  }
+
+  & tr {
+    background: fade(@primary-color, 20%);
+    color: @text-color;
+  }
+
+  & tr:nth-child(even) {
+    background: fade(@primary-color, 10%);
+  }
+
+  & tr:hover,
+  tr:hover td {
+    background-color: fade(@primary-color, 30%);
+  }
+
+}
+
+
+
+.xx2see {
+  .xx2see_title {
+    text-align: center;
+    font-weight: bold;
+    color: @primary-color;
+    padding: 5px 0 10px 0;
+  }
+
+  .xx2see_alert {
+    color: @muted-color;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  border: 1px dashed @primary-color;
+  border-radius: var(--border-radius);
+  padding: 0 10px 10px 10px;
+  margin: 10px 0;
+}
+
+
+.imeepo_cloud {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid @primary-color;
+  margin-bottom: 10px;
+  border-radius: @border-radius;
+}
+
+.imeepo_cloud p {
+  display: inline !important;
+  margin: 0 !important;
+}
+
+.imeepo_cloud .cloud_logo {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.imeepo_cloud .cloud_hide {
+  display: none;
+}
+
+.imeepo_cloud .cloud_button {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: auto;
+  background: @primary-color;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 34px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.imeepo_cloud .cloud_describe {
+  line-height: normal;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.imeepo_cloud .cloud_title {
+  color: @primary-color;
+  font-size: 16px;
+  margin-bottom: 3px;
+  padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.EnhancedTextEditor-toolbar {
+
+  /*border: none;
+margin-left: -20px;
+margin-top: -15px;
+
+
+.Button {
+  padding: 4px 3px;
+  background: white;
+}
+.Button:hover {
+  color:#f90;
+  background:none;
+}
+
+.Dropdown {
+  padding: 0px 4px;
+}
+
+.Dropdown-separator {
+  margin-left: -5px;
+  margin-top: 5px;
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  background-color: Silver;
+}
+
+.Button-caret {
+  margin-left: -2px;
+}*/
+  .hasColor {
+    display: block;
+    padding-left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+  }
+
+  .hasColor:first-child {
+    margin-left: 4px;
+    margin-right: -2px;
+
+  }
+
+  .color-t {
+    background: #1abc9c;
+  }
+
+  .color-g {
+    background: #2ecc71;
+  }
+
+  .color-b {
+    background: #3498db;
+  }
+
+  .color-p {
+    background: #9b59b6;
+  }
+
+  .color-y {
+    background: #f1c40f;
+  }
+
+  .color-o {
+    background: #e67e22;
+  }
+
+  .color-r {
+    background: #e74c3c;
+  }
+
+  .color-s {
+    background: #95a5a6;
+  }
+}
+
+/*bbcode-details*/
+@keyframes invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+
+  100% {
+    font-size: 1em;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+details {
+  padding: 0.5em 0;
+  transition: height 200ms ease-in;
+
+  summary:focus {
+    outline: none;
+  }
+
+  summary {
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+  }
+
+  summary:before {
+    content: '► ';
+    //content: "\f0da";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: inherit;
+    font-size: 18px;
+    padding-right: 0;
+
+  }
+
+  &[open]>summary:before {
+    content: '▼ ';
+    //content: "\f0d7";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: inherit;
+    font-size: 18px;
+    padding-right: 0;
+
+  }
+
+  &>div {
+    padding-left: 10px;
+    margin-left: 20px;
+    border-left: 3px solid var(--button-primary-bg);
+
+    & p:nth-child(1) {
+      margin-block-start: 0;
+    }
+  }
+
+  &[open]>div {
+    animation-name: invisiblyGrowFontSize, fadeIn;
+    animation-duration: 200ms, 100ms;
+    animation-delay: 0ms, 200ms;
+    background: var(--control-bg);
+  }
+}
+
+.no-details {
+  details {
+    summary:before {
+      content: '► ';
+      font-size: 12px;
+    }
+
+    &.open>summary:before {
+      content: '▼ ';
+    }
+  }
+}
+
+/*bbcode-tabs*/
+.CommentPost {
+  .tabs {
+    position: relative;
+    min-height: 200px;
+    /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+
+    .tab {
+      float: left;
+
+      &:first-of-type label {
+        border-top-left-radius: var(--border-radius);
+      }
+
+      &:last-of-type label {
+        border-top-right-radius: var(--border-radius);
+      }
+    }
+
+    .tab label {
+      background: @body-bg;
+      padding: 10px 10px 7px;
+      border: 1px solid @muted-color;
+      margin-left: -1px;
+      position: relative;
+      left: 1px;
+    }
+
+    .tab [type=radio] {
+      display: none;
+    }
+
+    .content {
+      display: none;
+      position: absolute;
+      top: 28px;
+      left: 0;
+      background: var(--body-bg);
+      right: 0;
+      bottom: 0;
+      padding: 10px 20px;
+      border: 1px solid var(--muted-color);
+      border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
+      overflow-y: auto;
+    }
+
+    [type=radio]:checked~label {
+      background: var(--control-bg);
+      font-weight: bold;
+      border-bottom: 1px solid var(--primary-color);
+
+    }
+
+    [type=radio]:checked~label~.content {
+      display: block;
+    }
+  }
+}
+
+//BBCode Alerts
+// CSS Alerts adapted from: https://codepen.io/rlemon/pen/vmIlC
+
+#aaalertbody {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.aaalert .aainner {
+  display: block;
+  padding: 6px;
+  text-align: center;
+  margin: 6px;
+  border-radius: 3px;
+  border: 1px solid rgb(180, 180, 180);
+  background-color: rgb(212, 212, 212);
+}
+
+.aaalert .aaclose {
+  float: right;
+  margin: 3px 12px 0 0;
+  cursor: pointer;
+}
+
+.aaalert .aainner,
+.aaalert .aaclose {
+  color: rgb(88, 88, 88);
+}
+
+.aaalert input {
+  display: none;
+}
+
+.aaalert input:checked~* {
+  animation-name: dismiss, hide;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s, 100ms;
+}
+
+.aaalert.aaerror .aainner {
+  border: 1px solid rgb(238, 211, 215);
+  background-color: rgb(242, 222, 222);
+}
+
+.aaalert.aaerror .aainner,
+.aaalert.aaerror .aaclose {
+  color: rgb(185, 74, 72);
+}
+
+.aaalert.aasuccess .aainner {
+  border: 1px solid rgb(214, 233, 198);
+  background-color: rgb(223, 240, 216);
+}
+
+.aaalert.aasuccess .aainner,
+.aaalert.aasuccess .aaclose {
+  color: rgb(70, 136, 71);
+}
+
+.aaalert.aanotice .aainner {
+  border: 1px solid rgb(188, 232, 241);
+  background-color: rgb(217, 237, 247);
+}
+
+.aaalert.aanotice .aainner,
+.aaalert.aanotice .aaclose {
+  color: rgb(58, 135, 173);
+}
+
+.aaalert.aawarning .aainner {
+  border: 1px solid rgb(251, 238, 213);
+  background-color: rgb(252, 248, 227);
+}
+
+.aaalert.aawarning .aainner,
+.aaalert.aawarning .aaclose {
+  color: rgb(192, 152, 83);
+}
+
+@keyframes dismiss {
+  0% {
+    opacity: 1;
+  }
+
+  90%,
+  100% {
+    opacity: 0;
+    font-size: 0.1px;
+    transform: scale(0);
+  }
+}
+
+@keyframes hide {
+  100% {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+// Another variant from: http://www.cssportal.com/blog/css-notification-boxes/
+
+.bbalert-box {
+  color: #555;
+  border-radius: 10px;
+  font-family: Tahoma, Geneva, Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 10px 10px 36px;
+  margin: 10px;
+}
+
+.bbalert-box span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bberror {
+  background: #ffecec no-repeat 10px 50%;
+  border: 1px solid #f5aca6;
+}
+
+.bberror:before {
+  .fa();
+  content: @fa-var-times-circle;
+  p: 0;
+  left: -5px;
+  padding-right: 10px;
+}
+
+.bbsuccess {
+  background: #e9ffd9 no-repeat 10px 50%;
+  border: 1px solid #a6ca8a;
+}
+
+.bbsuccess:before {
+  .fa();
+  content: @fa-var-check-circle;
+  top: 0;
+  left: -5px;
+  padding-right: 10px;
+}
+
+.bbwarning {
+  background: #fff8c4 no-repeat 10px 50%;
+  border: 1px solid #f2c779;
+}
+
+.bbwarning:before {
+  .fa();
+  content: @fa-var-exclamation-circle;
+  top: 0;
+  left: -5px;
+  padding-right: 10px;
+}
+
+.bbnotice {
+  background: #e3f7fc no-repeat 10px 50%;
+  border: 1px solid #8ed9f6;
+}
+
+.bbnotice:before {
+  .fa();
+  content: @fa-var-info-circle;
+  top: 0;
+  left: -5px;
+  padding-right: 10px;
+}
+
+//download-button
+.dadadownload {
+
+  /*width: 100%;
+max-width: 100%;
+display: -webkit-box;*/
+  & div:nth-child(2) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 600px;
+  }
+
+  & a {
+    color: inherit;
+    border-bottom: none !important;
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    margin: -1em;
+  }
+}
+
+.Post-body {
+  & .has-dropcap:first-letter {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    //float: left;
+    //font-size: 2rem;
+    //line-height: 1;
+    //margin: 0.1em 0.1em 0.1em 0;
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+    padding: 0 0.3rem;
+  }
+
+  & .has-dropcap-1:first-child::first-letter {
+    //color: hotpink;
+    padding: 0 .3rem;
+    margin: 0.2em 0.1em 0.1em 0;
+    border: 2px solid;
+    border-radius: 8px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  & .has-dropcap-2:first-child::first-letter {
+    //color: hotpink;
+    //padding: 0 .3rem;
+    //margin: 0.2em 0.1em 0.1em 0;
+    //border: 2px solid;
+    //border-radius: 8px;
+    //font-family: "IBM Plex Mono", monospace;
+
+    //font-size: 2rem;
+    //float: left;
+    //line-height: 1;
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+    padding: 0 0.2rem;
+    margin: 0em 0.2em 0.1em 0;
+    border: 2px solid;
+    border-radius: 8px;
+  }
+
+  & .dropcap {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    background: #303030;
+    color: #FDF9F2;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0.2em;
+  }
+
+  & .dropcap:before,
+  .dropcap:after {
+    content: "";
+    display: block;
+  }
+
+  & .dropcap:before {
+    margin-top: -0.2em;
+  }
+
+  & .dropcap:after {
+    margin-bottom: -0.15em;
+  }
+
+
+  & img:not(.emoji) {
+    border-radius: var(--border-radius);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: none;
+    -webkit-object-fit: cover;
+    object-fit: cover
+  }
+
+  & .img-left {
+    float: left;
+    max-width: 40%;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding: 0px 0px 10px;
+    text-align: left;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  & .img-center {
+    float: none;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  & .img-right {
+    float: right;
+    max-width: 40%;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding: 0px 0px 10px;
+    text-align: right;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+}
+
+
+span.spoiler {
+  // Style the inline spoiler itself: a dark block, invisible font
+  background: #444;
+  color: transparent;
+
+  // Try to generically hide all possible children
+  * {
+    // Links and other interactive elements would give their presence
+    // away when hovering
+    pointer-events: none;
+
+    // Children can have special text or background colors
+    background: transparent;
+    color: transparent;
+  }
+
+  // Hide images visually
+  img {
+    visibility: hidden;
+  }
+}
+
+// Progress Bar
+.fa-bar:before {
+  content: "\f233";
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: inherit;
+  font-size: 18px;
+  //font-family: 'Font Awesome 5 Free';
+  //padding-right: 0.5em;
+  //color: black;
+  //background: black;
+}
+
+.MiniFLAR-ProgressBar-meter {
+  position: relative;
+  width: 100%;
+  border: 5px solid #666;
+  border-radius: 2px;
+  height: 2em;
+  margin-bottom: 2em;
+}
+
+.MiniFLAR-ProgressBar-meter-status {
+  color: white;
+  text-align: right;
+  padding-top: .3em;
+  padding-right: .8em;
+  background-color: #3aa6d0;
+  border-color: white;
+  border-right: 0.5em solid #8ccbe4;
+  width: 0;
+  height: 100%;
+  line-height: 1.2em;
+  animation: width .5s ease-in;
+}
+
+@keyframes width {
+  from {
+    width: 0;
+  }
+}
+
+.ButtonBar {
+  z-index: 1200;
+  display: block;
+  position: absolute;
+  background-color: var(--control-bg);
+  color: var(--control-color);
+
+  .color-indicator {
+    padding: 1px 9px;
+
+    &.text {
+      padding: 3px 7px;
+      text-align: center;
+      border-radius: 20px;
+    }
+  }
+
+  .ButtonBar-space {
+    display: inline;
+    padding: 1px;
+    background-color: var(--control-color);
+  }
+
+  button.GroupBtn {
+    position: relative;
+  }
+
+  button.GroupBtn.selected {
+    color: var(--secondary-color);
+    ;
+
+    &::before {
+      top: unset !important;
+      bottom: 0px;
+    }
+  }
+
+  button.GroupBtn::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    display: block;
+    background: var(--control-color);
+    height: 2px;
+    left: 2px;
+    right: 2px;
+  }
+
+  &.main-entry {
+    bottom: 57px;
+  }
+
+  &.SubButtons {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 0;
+
+    &.show {
+      display: block;
+    }
+  }
+}
+
+.stackIcon {
+  position: relative;
+
+  .main {
+    font-size: 17px;
+  }
+
+  .rb-corner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--control-bg);
+    background: var(--control-color);
+    font-size: 10px;
+  }
+
+  .lb-corner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--control-bg);
+    background: var(--control-color);
+    font-size: 10px;
+  }
+
+  .cb-corner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+    color: var(--control-bg);
+    background: var(--control-color);
+    font-size: 10px;
+  }
+}
+
+.setting-default-value {
+  color: var(--control-color);
+}
