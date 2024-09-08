@@ -1,0 +1,223 @@
+xypp-more-bbcode:
+  admin:
+    settings:
+      tip: |
+        Notice: Make sure to run cache:clear after any change with function/cloud settings. They will NEVER be save to the formatter until you clear cache to let flarum regenerate the render file.
+        CHECK YOUR WEBSITE AFTER ANY SETTINGS
+      misc:
+        title: Misc
+        remove-markdown:
+          title: Hide the original markdown group
+          all: For All Device
+          tablet: Tablet and Phone
+          phone: Phone
+          none: None
+        collect-all:
+          title: Collapse all other button into a new group
+          all: For All Device
+          tablet: Tablet and Phone
+          phone: Phone
+          none: None
+        collect-markdown:
+          title: Collapse the markdown button in Collapsed
+          first: Collect direct into the group
+          sub: Create a sub group
+          none: No create
+        pref-markdown:
+          title: Prefer use Markdown syntax in BBCode toolbar.
+          all: Always
+          collected: When Markdown Bar Hide
+          none: Never
+      functions:
+        title: Functions Switch
+        desc: Disable the function as you wish. By default is all enable.
+      cloud:
+        title: Cloud Box Config
+        name: Name
+        image: Image
+        content: Content Tip
+        key: Key(type)
+        confirm: Confirm to delete?
+        add: Add Row
+      save: Save
+    permissions:
+      bypass_reply_label: Ignore Reply2See tags
+      bypass_like_label: Ignore Like2See tags
+  forum:
+    name: BBCode More
+    collect: Collected Buttons
+    markdown: Markdown
+    # Typography Part
+    fonts:
+      title: Font Styles
+      bold: Bold
+      italic: Italic
+      strike_through: Strike Through
+      underline: Underline
+    typography:
+      title: Typography
+      link: Link
+      image: Image
+      imagebb: Image(BBCode)
+      code: Code
+      quote: Quote
+      spoiler: Spoiler
+      dropcap: Dropcap
+      horizontal_line: Horizontal Line
+      table: Table
+      unordered_list: Unordered List
+      ordered_list: Ordered List
+    heading:
+      title: Heading
+      label: "H{level}"
+    align:
+      title: Align
+      align_left: Align Left
+      align_center: Align Center
+      align_right: Align Right
+      align_justify: Justify
+      padding_left: Padding Left
+      padding_right: Padding Right
+      image_left: Image Left
+      image_right: Image Right
+      image_center: Image Center
+    size:
+      title: Size
+      label: "{size}px"
+    color:
+      title: Color
+      label: "{color}"
+    background:
+      title: Background
+      label: "{color}"
+    sign:
+      title: Sign
+      acronym: Acronym
+      subscript: Subscript
+      superscript: Superscript
+
+    # Utilities Part
+    container:
+      title: Container
+      table: Table
+      details: Details
+      quote: Quote
+      code: Code
+      alert: Alert
+      tabs: Tab
+      iframe: IFrame
+      progress: Progress Bar
+
+    #Embed
+    embed:
+      title: Media embed
+      cloud: Cloud Download Box
+      down: Download
+      clip: Clip Video
+      audio: Audio
+
+    #xx2see
+    xx2see:
+      title: Limit
+      reply:
+        title: Reply to See content
+        deny: "This content requires {reply} and displays after refresh"
+      login:
+        title: Login to See Content
+        deny: "This content requires {login} and is visible after refresh"
+      like:
+        title: Like to See Content
+        deny: "This content requires {like} and is visible after refresh"
+        hasLiked: You have liked the post. Please reload the page.
+        cannot: You cannot like the post.
+
+    #common replacement
+    common:
+      describe: The Describe Here.
+      title: The Title Here
+      text: Put your text here.Put your text here.Put your text here.Put your text here.
+      simple: Put your text here
+      url: "https://example.com"
+      size: 1kb
+      file: example_file.zip
+      any: "..."
+      column: Column
+    #alert preview
+    alert:
+      title: Alert
+      type:
+        label: Type
+        success: Success
+        warning: Warning
+        error: Error/Danger
+        notice: Info/Notice
+        custom: Custom
+        basic: Basic
+      label:
+        success: Success!
+        warning: Warning
+        error: Error!
+        notice: Notice
+      style: Style
+      insert: Insert
+      defaults:
+        title: Hello, I'm an Alert!
+        content: "This is the default content of {type} alert {style}"
+    # cloud preview
+    cloud:
+      title: Cloud Preview
+      insert: Insert
+      type:
+        label: Cloud
+        other: Network Disks
+        github: Github Repository
+        gitee: Gitee Repository
+        ali: Ali Yunpan
+        360: 360 Yunpan
+        bd: Baidu Yunpan
+        ty: Tianyi 189 Cloud
+        ct: CT File
+        tx: Tencent Weiyun
+        lz: Lanzou Yun
+        123: 123Pan
+        quark: Quark Network Disk
+        google: Google Drive
+        one: OneDrive
+        f: Fshare
+        mega: Mega
+        dropbox: DropBox
+        mediafire: MediaFire
+      content:
+        defaults: Content Here
+        version: " | Version: "
+        password: " | Password: "
+
+    preference-default: The default value is {default}
+    auto-close:
+      title: Auto close the toolbar after click
+      all: All device
+      tablet: Tablet and Phone
+      phone: Phone
+      none: None
+    pref-markdown:
+      title: Prefer use Markdown syntax in BBCode toolbar.
+      all: Always
+      collected: When Markdown Bar Hide
+      none: Never
+    remove-markdown:
+      title: Hide the original markdown group
+      all: For All Device
+      tablet: Tablet and Phone
+      phone: Phone
+      none: None
+    collect-all:
+      title: Collapse all other button to a new group
+      all: For All Device
+      tablet: Tablet and Phone
+      phone: Phone
+      none: None
+    collect-markdown:
+      title: Collapse the markdown button to Collapsed group
+      first: Collect direct into the group
+      sub: Create a sub group
+      none: No create
