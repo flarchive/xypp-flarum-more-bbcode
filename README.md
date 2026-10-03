@@ -2,13 +2,24 @@
 
 > **Read-only archive of released versions of xypp/flarum-more-bbcode.** Not for installation: use [Packagist](https://packagist.org/packages/xypp/flarum-more-bbcode) or the [upstream repository](https://github.com/zxy19/flarum-more-bbcode).
 
-**0** versions archived · Latest: [`v2.1.8`](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v2.1.8) · License: `MIT` · Flarum: `^1.2.0`
+**22** versions archived · Latest: [`v2.1.8`](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v2.1.8) · License: `MIT` · Flarum: `^1.2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0.0` | 2024-08-26 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v1.0.0) |
+| `v1.0.1` | 2024-08-26 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v1.0.1) |
+| `v1.0.2` | 2024-08-27 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v1.0.2) |
+| `v1.0.3` | 2024-08-28 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v1.0.3) |
+| `v1.0.4` | 2023-11-11 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v1.0.4) |
+| `v1.0.5` | 2023-11-12 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v1.0.5) |
+| `v2.0.0` | 2024-09-01 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v2.0.0) |
+| `v2.0.1` | 2024-09-01 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v2.0.1) |
+| `v2.0.2` | 2024-09-01 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v2.0.2) |
+| `v2.0.3` | 2024-09-01 | `^1.2.0` | [Browse](https://github.com/flarchive/xypp-flarum-more-bbcode/tree/archive/v2.0.3) |
+
+[View all 22 versions](https://github.com/flarchive/xypp-flarum-more-bbcode/tags)
 
 Catalog entry: [packages/xypp-flarum-more-bbcode.json](https://github.com/flarchive/archive-index/blob/main/packages/xypp-flarum-more-bbcode.json)
 
